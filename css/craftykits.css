@@ -1,0 +1,374 @@
+.taxonomy-craftykits_shipping .term-slug-wrap,
+.taxonomy-craftykits_shipping .term-description-wrap,
+.taxonomy-craftykits_shipping .term-parent-wrap,
+.taxonomy-craftykits_coupons .term-slug-wrap,
+.taxonomy-craftykits_coupons .term-description-wrap,
+.taxonomy-craftykits_coupons .term-parent-wrap,
+#craftykits_shipping-adder,
+#craftykits_coupons-adder{
+    display: none;
+}
+.craftykits_regular_price_field, 
+.craftykits_sale_price_field,
+#craftykits_sale_price,
+#craftykits_regular_price{
+    width: 150px;
+    float: left;
+}
+#craftykits_sale_price,
+#craftykits_regular_price{
+    width: 30%;
+}
+.craftykits_clear_both,.craftykits_order_customer_label{
+    clear: both;
+    margin-bottom: 10px;
+    display: block;
+}
+.craftykits_clear_both_no_margin{
+    clear: both;
+}
+.frm_craftykits input[type="text"] {
+    width: 70%;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+#craftykits_upload_file_field{
+    opacity: 0;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+    width: 160px;
+}
+#craftykits_upload_file_anch{
+    position: absolute;
+    z-index: 10;
+    width: 160px;
+}
+.craftykits_upload_progress_area{
+    display: none;
+    min-height: 20px;
+    width: 205px;
+    font-size: 12px;
+    margin-left: -20px;
+}
+.craftykits_payment_progress_area{
+    width: 100%;
+    margin: 0px;
+}
+.craftykits_upload_progress_area .craftykits_bar{
+    height: 18px;
+    position: relative;
+    background: #555;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.craftykits_upload_progress_area .craftykits_file_progress{
+    background: #FFF;
+    padding: 7px;
+    border: 1px solid #AFB38F;
+}
+.craftykits_payment_progress_area .craftykits_file_progress{
+    background: none;
+    border: none;
+}
+.craftykits_upload_progress_area .status{
+    margin: 3px;
+}
+.craftykits_payment_progress_area .status{
+    margin-bottom: 5px;
+    display: block;
+}
+.craftykits_upload_progress_area .info{
+    font-weight: bold;
+    margin-top: 3px;
+}
+.craftykits_upload_progress_area .craftykits_bar .craftykits_progress{
+    display: block;
+    height: 18px;
+    margin-top: -9px;
+    margin-left: -9px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(43,194,83);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43,194,83) 37%,
+      rgb(84,240,84) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+.craftykits_upload_progress_area .craftykits_bar .craftykits_progress:after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-image: linear-gradient(
+    -45deg, 
+    rgba(255, 255, 255, .2) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(255, 255, 255, .2) 50%, 
+    rgba(255, 255, 255, .2) 75%, 
+    transparent 75%, 
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+  animation: move 2s linear infinite;
+}
+#craftykits_ajax_img{
+    display: none;
+    margin-left: 5px;
+}
+.craftykits_userinfo_container{
+    padding: 40px 20px 0px 20px;
+}
+.craftykits_userinfo_container .craftykits_user_name{
+    color: #999999;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.craftykits_userinfo_container .craftykits_user_upload_heading{
+    font-size: 24px;
+}
+.craftykits_userinfo_container .craftykits_userinfo_row{
+    margin: 20px 0px;
+}
+.craftykits_userinfo_container .craftykits_user_upload{
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+    width: 63%;
+    float: left;
+}
+.craftykits_userinfo_container .craftykits_user_upload img{
+    margin: auto;
+    display: block;
+}
+.craftykits_userinfo_container .craftykits_user_cart_area{
+    width: 30%;
+    float: right;
+}
+.craftykits_userinfo_container .craftykits_user_cart{
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+    background: #EFEFEF;
+    border-radius: 5px;
+    color: #999999;
+}
+
+.craftykits_userinfo_container .craftykits_user_cart_quantity,
+.craftykits_userinfo_container .craftykits_user_cart_price,
+.craftykits_userinfo_container .craftykits_payment_button,
+.craftykits_userinfo_container .craftykits_cart_terms{
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    font-weight: bold;
+}
+.craftykits_userinfo_container .craftykits_cart_terms{
+    font-weight: normal;
+    font-size: 12px;
+}
+.craftykits_userinfo_container .craftykits_user_cart_price strike{
+    color: #CCC;
+}
+.craftykits_userinfo_container .craftykits_payment_button form{
+    margin: 0px;
+}
+.craftykits_userinfo_container .craftykits_payment_button input[type="submit"]{
+    width: 100%;
+    height: 90px;
+    border-radius: 7px;
+}
+.craftykits_userinfo_container .craftykits_user_register_area,
+.craftykits_userinfo_container .craftykits_user_login_area,
+.craftykits_userinfo_container .craftykits_user_area_or{
+    width: 36%;
+    float: left;
+}
+.craftykits_userinfo_container .craftykits_user_area_or{
+    width: 50px;
+    margin: 8% 11%;
+    border-radius: 25px;
+    padding: 14px 12px;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+    background: #EFEFEF;
+    color: #999999;
+    font-weight: bold;
+}
+.craftykits_userinfo_container .craftykits_user_login_area{
+    float: right;
+}
+.craftykits_fileds_box{
+    border: 1px solid #CCC;
+    background: #FAFAFA;
+    border-radius: 5px;
+    color: #999;
+}
+.craftykits_fileds_box .box_title,
+.craftykits_fileds_box .box_content{
+    padding: 10px;
+}
+.craftykits_fileds_box .box_title{
+    border-bottom: 1px solid #CCC;
+    background: #F1F1F1;
+    font-weight: bold;
+}
+.craftykits_fileds_box input[type="text"],
+.craftykits_fileds_box input[type="email"],
+.craftykits_fileds_box input[type="password"] {
+    width: 100%;
+    height: 30px;
+}
+.craftykits_user_billing_box,
+.craftykits_user_shipping_box{
+    width: 48%;
+    float: left;
+}
+.craftykits_user_shipping_box{
+   float: right; 
+}
+.craftykits_user_shipping_box .box_title span{
+    display: block;
+    float: left;
+    width: 50%;
+}
+.craftykits_user_shipping_box .box_title span:last-of-type{
+    text-align: right;
+    font-weight: normal;
+    font-size: 14px;
+    color: #DA4400;
+}
+.craftykits_user_shipping_box .box_title input[type="checkbox"]{
+    margin: -2px 5px 0px 0px;
+}
+.craftykits_shipping_note{
+    color: #DA4400;
+    float: right;
+    font-size: 14px;
+}
+.craftykits_shipping_note i{
+    font-weight: bold;
+    font-size: 16px;
+}
+.craftykits_col_onthird{
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+.craftykits_col_onthird:last-child{
+    margin-right: 0px;
+    float: right;
+}
+.craftykits_userpayement_container .craftykits_user_cart table{
+    margin: 2%;
+}
+.craftykits_userpayement_container .craftykits_user_cart table thead td{
+    font-weight: bold;
+}
+.craftykits_userpayement_container #craftykits_product_quantity{
+    padding: 0px;
+    width: 50px;
+    height: 29px;
+    padding-left: 5px;
+}
+#craftykits_customer_notes{
+    width: 100%;
+}
+.craftykits_userpayement_container .craftykits_user_pshipping_box .box_title input[type="button"],
+.craftykits_userpayement_container .craftykits_user_pbilling_box .box_title input[type="button"]{
+    float: right;
+}
+.craftykits_userpayement_container .craftykits_user_pshipping_box .box_field,
+.craftykits_userpayement_container .craftykits_user_pbilling_box .box_field{
+    margin-bottom: 3px;
+}
+.craftykits_userpayement_container .craftykits_user_pshipping_box .box_field span,
+.craftykits_userpayement_container .craftykits_user_pbilling_box .box_field span{
+    font-weight: bold;
+}
+.craftykits_userpayement_container .craftykits_user_shipping_methods_box .box_field{
+    font-size: 14px;
+    font-weight: bold;
+}
+.craftykits_userpayement_container .craftykits_user_shipping_methods_box .box_field span{
+    display: block;
+    padding: 3px 0px 10px 18px;
+    font-weight: normal;
+}
+.craftykits_userpayement_container .craftykits_user_shipping_methods_box .box_field input[type="radio"] {
+    margin-top: -2px;
+}
+#craftykits_cc_exp_month{
+    float: left;
+}
+#craftykits_cc_exp_month,#craftykits_cc_exp_year{
+    width: 40%;
+    margin-right: 3%;
+}
+#craftykits_cc_number_verification{
+    width: 40%;
+}
+.craftykits_userpayement_container #craftykits_cart_button{
+    font-size: 32px;
+}
+.craftykits_payment_options{
+    padding: 20px 10px 10px;
+}
+.craftykits_payment_option_container{
+    width: 55%;
+    float: left;
+    margin-right: 5%;
+}
+.craftykits_payment_option_container:last-child{
+     margin-right: 0px;
+     width: 40%;
+}
+.craftykits_payment_options .craftykits_payment_cc,
+.craftykits_payment_options .craftykits_payment_paypal{
+    width: 166px;   
+    display: inline-block;
+    border:1px solid #CCC;
+    padding: 3px;
+    border-radius: 5px;
+}
+.craftykits_payment_options .craftykits_payment_paypal{
+    width: 85px;
+}
+.craftykits_payment_options .payment_selected{
+    border:1px solid #04C;
+    padding: 3px;
+    box-shadow:0px 6px 11px 1px #333;
+}
